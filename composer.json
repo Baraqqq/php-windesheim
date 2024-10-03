@@ -1,0 +1,23 @@
+{
+    "name": "ilias/php",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "app/"
+        ]
+        
+    },
+    "authors": [
+        {
+            "name": "Baraqqq",
+            "email": "iliasbach@hotmail.com"
+        }
+    ],
+
+    "require": {
+        "symfony/routing": "^7.1",
+        "symfony/http-foundation": "^7.1"
+    }
+}
