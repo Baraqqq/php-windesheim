@@ -5,8 +5,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Controleer het pad naar autoload.php
+$autoloadPath = '../vendor/autoload.php';
+var_dump($autoloadPath);
+var_dump(file_exists($autoloadPath));
+
 // Autoloader
-require_once '../vendor/autoload.php';
+require_once $autoloadPath;
 
 session_start();
 
