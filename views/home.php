@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple PHP MVC</title>
 </head>
-
 <body>
 
-    <section>
-        <h1>Homepage</h1>
-        <p>
-            <a href="<?php echo $routeToProduct ?>">Check the first product</a>
-        </p>
-    <section>
-</body>
+<nav>
+    <ul>
+        <?php foreach ($profiles as $profile): ?>
+            <li><a href="/profile?id=<?php echo $profile['id']; ?>"><?php echo htmlspecialchars($profile['name']); ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</nav>
 
+<section>
+    <h1>Homepage</h1>
+    <p>
+        <a href="/profile/form">Create Profile</a>
+    </p>
+</section>
+
+</body>
 </html>
