@@ -10,9 +10,13 @@
 
 <nav>
     <ul>
-        <?php foreach ($profiles as $profile): ?>
-            <li><a href="/profile?id=<?php echo $profile['id']; ?>"><?php echo htmlspecialchars($profile['name']); ?></a></li>
-        <?php endforeach; ?>
+        <?php if (isset($profiles) && is_array($profiles)): ?>
+            <?php foreach ($profiles as $profile): ?>
+                <li><a href="/profile?id=<?php echo $profile['id']; ?>"><?php echo htmlspecialchars($profile['name']); ?></a></li>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <li>No profiles found.</li>
+        <?php endif; ?>
     </ul>
 </nav>
 

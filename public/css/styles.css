@@ -1,0 +1,43 @@
+.header {
+  /* Voeg hier je stijlen voor de header toe */
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.rectangle-48, .rectangle-47, .rectangle-49 {
+  /* Voeg hier je stijlen voor de rechthoeken toe */
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.iliasbach-hotmail-com {
+  /* Voeg hier je stijlen voor de e-mail tekst toe */
+  font-size: 16px;
+  color: #333;
+}
+
+.rectangle-50, .rectangle-49 {
+  /* Voeg hier je stijlen voor de afbeeldingen toe */
+  width: 50px;
+  height: 50px;
+}
+
+.copy2, .login2, .cv, .works, .about-me, .contact, .others {
+  /* Voeg hier je stijlen voor de tekst toe */
+  font-size: 14px;
+  color: #333;
+}
+
+.login-2-span, .login-2-span2, .works-span, .works-span2, .about-me-span, .about-me-span2, .contact-span, .contact-span2, .others-span, .others-span2 {
+  /* Voeg hier je stijlen voor de spans toe */
+  font-weight: bold;
+}
+
+.div, .div2, .div3 {
+  /* Voeg hier je stijlen voor de dividers toe */
+  display: inline-block;
+  margin: 0 5px;
+}

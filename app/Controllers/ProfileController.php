@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Controllers;
 
 use App\Models\Profile;
+use Symfony\Component\Routing\RouteCollection;
 
 class ProfileController
 {
@@ -41,10 +42,13 @@ class ProfileController
         require_once APP_ROOT . '/views/profile_form.php';
     }
 
-    // Home page action
-    public function indexAction()
+    // Home page action to display profiles
+    public function homeAction()
     {
+        // Profielgegevens ophalen
         $profiles = Profile::getProfiles();
+
+        // Profielen doorgeven aan de view
         require_once APP_ROOT . '/views/home.php';
     }
 }

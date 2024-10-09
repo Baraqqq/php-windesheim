@@ -3,10 +3,10 @@
 require_once 'config.php';
 
 function getDBConnection() {
-    $host = DB_HOST;
-    $db = DB_NAME;
-    $user = DB_USER;
-    $pass = DB_PASS;
+    $host = '127.0.0.1';
+    $db   = 'profileapp';
+    $user = 'root';
+    $pass = '14April2005!?';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
