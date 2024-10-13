@@ -30,6 +30,10 @@ $routes->add('contact', new Route('/contact', ['_controller' => 'App\Controllers
 $routes->add('profile', new Route('/profile', ['_controller' => 'App\Controllers\ProfileController::profileAction']));
 $routes->add('profile_form', new Route('/profile/form', ['_controller' => 'App\Controllers\ProfileController::profileFormAction']));
 $routes->add('second_home', new Route('/', ['_controller' => 'App\Controllers\PageController::secondHomeAction']));
+$routes->add('about_me', new Route('/about-me', ['_controller' => 'App\Controllers\PageController::aboutMeAction']));
+$routes->add('blogs', new Route('/blogs', ['_controller' => 'App\Controllers\PageController::blogsAction']));
+$routes->add('works', new Route('/works', ['_controller' => 'App\Controllers\PageController::worksAction']));
+$routes->add('login', new Route('/login', ['_controller' => 'App\Controllers\PageController::loginAction']));
 
 // Verzoek URI ophalen
 $request = Request::createFromGlobals();

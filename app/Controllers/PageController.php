@@ -23,5 +23,27 @@ class PageController
     {
         require_once APP_ROOT . '/views/second_home.php';
     }
+
+    // About Me page action
+    public function aboutMeAction()
+    {
+        require_once APP_ROOT . '/views/about-me.php';
+    }
+
+    // Blogs page action
+    public function blogsAction()
+    {
+        require_once APP_ROOT . '/views/blogs.php';
+    }
+
+    // Works page action
+    public function worksAction()
+    {
+        require_once APP_ROOT . '/views/works.php';
+    }
+    public function loginAction()
+    {
+        require_once APP_ROOT . '/views/login.php';
+    }
 }
 ?>
