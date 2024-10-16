@@ -1,9 +1,60 @@
+/* Algemene stijlen */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik', sans-serif; /* Stel het lettertype in op Rubik */
+}
+
+/* Hero section */
+.frame-3710,
+.frame-3710 * {
+  box-sizing: border-box;
+}
+
+.frame-3710 {
+  height: 698px; /* Gebruik de hoogte van je ontwerp */
+  position: relative;
+}
+
+.rectangle-74 {
+  background: #eaeaea;
+  border-radius: 0px 0px 220px 220px;
+  width: 100%; /* Gebruik percentage voor breedte */
+  height: 100%; /* Gebruik percentage voor hoogte */
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero {
+  height: 100%; /* Gebruik volledige hoogte van de parent */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Zorg ervoor dat de hero section boven de background staat */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3; /* Zorg ervoor dat de hero content boven de hero background staat */
+}
+
+/* Header */
 .header {
+  width: 100%;
   padding: 20px;
   text-align: center;
-  background-color: transparent;
+  background-color: transparent; /* Zorg ervoor dat de header transparant is */
   position: relative;
-  z-index: 10;
+  z-index: 4; /* Zorg ervoor dat de header boven de hero background staat */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,16 +62,16 @@
 
 .mail {
   background-color: #E2E2E2;
-  border-radius: 20px; /* Pas de border-radius aan */
+  border-radius: 20px;
   padding: 5px 10px;
   display: flex;
   align-items: center;
-  height: 40px; /* Pas de hoogte aan */
+  height: 40px;
 }
 
 .rectangle-48 {
   background: linear-gradient(to left, #e2e2e2, #e2e2e2);
-  border-radius: 20px; /* Pas de border-radius aan */
+  border-radius: 20px;
   height: 30px;
   position: relative;
 }
@@ -39,9 +90,9 @@
   background-color: #333;
   color: white;
   border: none;
-  border-radius: 20px; /* Pas de border-radius aan */
+  border-radius: 20px;
   cursor: pointer;
-  height: 40px; /* Pas de hoogte aan */
+  height: 40px;
 }
 
 .copy-button:hover {
@@ -49,21 +100,174 @@
 }
 
 .login-frame {
-  width: 100px; /* Pas de breedte aan */
-  height: 40px; /* Pas de hoogte aan */
+  width: 100px;
+  height: 40px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to left, #ffffff, #ffffff);
-  border-radius: 20px; /* Pas de border-radius aan */
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .login2 {
   color: #000000;
-  font-family: "Rubik-Regular", sans-serif;
-  font-size: 16px; /* Pas de font-size aan */
+  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
+  font-size: 16px;
   letter-spacing: 0.02em;
   font-weight: 400;
+}
+
+/* Main content */
+.main-content {
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Zorg ervoor dat de main content boven de hero background staat */
+}
+
+/* Footer */
+.group-51,
+.group-51 * {
+  box-sizing: border-box;
+}
+
+.group-51 {
+  height: auto; /* Maak de hoogte automatisch */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.c-2024-all-rights-reserved {
+  color: #000000;
+  text-align: left;
+  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.linked-in-github {
+  color: #000000;
+  text-align: left;
+  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.linked-in-github a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.linked-in-github a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries voor responsiviteit */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .mail {
+      margin-bottom: 10px;
+  }
+
+  .group-51 {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .linked-in-github {
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 10px;
+  }
+
+  .login-frame {
+      width: 80px;
+      height: 35px;
+  }
+
+  .login2 {
+      font-size: 14px;
+  }
+}
+
+/* Nieuwe stijlen voor de afbeelding en titel */
+.image-1,
+.image-1 * {
+  box-sizing: border-box;
+}
+
+.image-1 {
+  width: 288px;
+  height: 297px;
+  position: relative;
+}
+
+.image-12 {
+  border-radius: 181.5px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.group-61,
+.group-61 * {
+  box-sizing: border-box;
+}
+
+.group-61 {
+  width: 213px;
+  height: 39px;
+  position: relative;
+  margin-top: 20px; /* Voeg wat ruimte toe boven de titel */
+}
+
+.rectangle-51 {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.hello-i-m-ilias {
+  color: #000000;
+  text-align: center;
+  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
