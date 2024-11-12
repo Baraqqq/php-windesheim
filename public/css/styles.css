@@ -1,273 +1,429 @@
-/* Algemene stijlen */
-html, body {
+/* Reset some default browser styles */
+body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Rubik', sans-serif; /* Stel het lettertype in op Rubik */
+  overflow-x: hidden;
 }
 
-/* Hero section */
-.frame-3710,
-.frame-3710 * {
+.frame-3712,
+.frame-3712 * {
   box-sizing: border-box;
 }
 
-.frame-3710 {
-  height: 698px; /* Gebruik de hoogte van je ontwerp */
-  position: relative;
-}
-
-.rectangle-74 {
-  background: #eaeaea;
-  border-radius: 0px 0px 220px 220px;
-  width: 100%; /* Gebruik percentage voor breedte */
-  height: 100%; /* Gebruik percentage voor hoogte */
-  position: absolute;
-  left: 0;
-  top: 0;
-  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.25);
-}
-
-.hero {
-  height: 100%; /* Gebruik volledige hoogte van de parent */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  z-index: 2; /* Zorg ervoor dat de hero section boven de background staat */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3; /* Zorg ervoor dat de hero content boven de hero background staat */
-}
-
-/* Header */
-.header {
+.frame-3712 {
   width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: transparent; /* Zorg ervoor dat de header transparant is */
-  position: relative;
-  z-index: 4; /* Zorg ervoor dat de header boven de hero background staat */
+  height: 111px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Zorg ervoor dat de header bovenop de hero-sectie wordt geplaatst */
+  background: transparent; /* Zorg ervoor dat de header transparant is */
+}
+
+.login-container {
+  width: 76px;
+  height: 41px;
+  padding: 12px 18px;
+  background: linear-gradient(0deg, white 0%, white 100%);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.login a {
+  color: black;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+  word-wrap: break-word;
+  text-decoration: none; /* Verwijder de onderstreping */
+}
+
+.component1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mail {
-  background-color: #E2E2E2;
-  border-radius: 20px;
-  padding: 5px 10px;
+  width: 267px;
+  height: 41px;
+  position: relative;
   display: flex;
   align-items: center;
-  height: 40px;
+  justify-content: space-between;
 }
 
 .rectangle-48 {
-  background: linear-gradient(to left, #e2e2e2, #e2e2e2);
-  border-radius: 20px;
-  height: 30px;
-  position: relative;
+  width: 267px;
+  height: 41px;
+  background: linear-gradient(0deg, #E2E2E2 0%, #E2E2E2 100%);
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .iliasbach-hotmail-com {
-  font-size: 16px;
-  color: #333;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
+  position: absolute;
+  left: 22.06px;
+  top: 12px;
+  color: black;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.28px;
 }
 
-.copy-button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  height: 40px;
-}
-
-.copy-button:hover {
-  background-color: #555;
-}
-
-.login-frame {
-  width: 100px;
-  height: 40px;
-  position: relative;
+.copy {
+  width: 69px;
+  height: 41px;
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, #ffffff, #ffffff);
-  border-radius: 20px;
+}
+
+.rectangle-50 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #85A3F0 0%, #85A3F0 100%);
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.copy2 {
+  color: white;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.28px;
   cursor: pointer;
-}
-
-.login2 {
-  color: #000000;
-  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-}
-
-/* Main content */
-.main-content {
-  padding: 20px;
   position: relative;
-  z-index: 2; /* Zorg ervoor dat de main content boven de hero background staat */
+  z-index: 1;
 }
 
-/* Footer */
-.group-51,
-.group-51 * {
-  box-sizing: border-box;
-}
-
-.group-51 {
-  height: auto; /* Maak de hoogte automatisch */
-  position: relative;
+.navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f8f8f8;
+  gap: 29px;
+  justify-content: center;
+  align-items: center; /* Zorg ervoor dat de items in het midden worden uitgelijnd */
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
-.c-2024-all-rights-reserved {
-  color: #000000;
+.navbar a {
+  text-decoration: none; /* Verwijder de onderstreping */
+}
+
+.home,
+.projects,
+.about,
+.blogs,
+.skills {
   text-align: left;
-  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
+  font-family: 'Rubik', sans-serif;
   font-size: 14px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.28px;
   font-weight: 400;
 }
 
-.linked-in-github {
-  color: #000000;
-  text-align: left;
-  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  font-weight: 400;
+.home-span,
+.projects-span,
+.about-span,
+.blogs-span,
+.skills-span {
+  color: #81A4FF;
 }
 
-.linked-in-github a {
-  color: #000000;
-  text-decoration: none;
-  margin: 0 5px;
+.home-span2,
+.projects-span2,
+.about-span2,
+.blogs-span2,
+.skills-span2 {
+  color: black;
 }
 
-.linked-in-github a:hover {
-  text-decoration: underline;
-}
-
-/* Media queries voor responsiviteit */
 @media (max-width: 768px) {
-  .header {
+  .frame-3712 {
       flex-direction: column;
-      text-align: center;
-  }
-
-  .mail {
-      margin-bottom: 10px;
-  }
-
-  .group-51 {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .linked-in-github {
-      margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header {
+      height: auto;
       padding: 10px;
   }
 
-  .login-frame {
-      width: 80px;
-      height: 35px;
+  .login-container,
+  .component1,
+  .navbar {
+      position: static;
+      margin: 10px 0;
   }
 
-  .login2 {
-      font-size: 14px;
+  .rectangle-48 {
+      width: 100%;
+  }
+
+  .home,
+  .projects,
+  .about,
+  .blogs,
+  .skills {
+      margin: 5px 0;
   }
 }
 
-/* Nieuwe stijlen voor de afbeelding en titel */
-.image-1,
-.image-1 * {
-  box-sizing: border-box;
+/* Hero Section CSS */
+.hero {
+  width: 100%;
+  height: 100vh; /* Zorg ervoor dat de hero-sectie de volledige hoogte van het scherm vult */
+  position: relative;
+  overflow: hidden; /* Verwijder eventuele overloop */
 }
 
-.image-1 {
-  width: 288px;
-  height: 297px;
+.header {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.image-12 {
-  border-radius: 181.5px;
+.frame-3710 {
   width: 100%;
   height: 100%;
   position: absolute;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-  object-fit: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.group-61,
-.group-61 * {
-  box-sizing: border-box;
+.rectangle-74 {
+  width: 100%;
+  height: 100%;
+  background: #EAEAEA;
+}
+
+.group-60 {
+  width: 309px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 569px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-52, .group-53 {
+  width: 152px;
+  height: 36px;
+  position: relative;
+}
+
+.rectangle-84, .rectangle-83 {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.rectangle-84 {
+  background: linear-gradient(0deg, white 0%, white 100%);
+  border: 3px #85A3F0 solid;
+}
+
+.rectangle-83 {
+  background: linear-gradient(0deg, #85A3F0 0%, #85A3F0 100%);
+}
+
+.download-cv, .lets-connect {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.download-cv a {
+  color: #85A3F0;
+  text-decoration: none;
+}
+
+.lets-connect {
+  color: white;
 }
 
 .group-61 {
   width: 213px;
   height: 39px;
-  position: relative;
-  margin-top: 20px; /* Voeg wat ruimte toe boven de titel */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 473px;
 }
 
 .rectangle-51 {
-  background: linear-gradient(to left, #ffffff, #ffffff);
-  border-radius: 30px;
   width: 100%;
   height: 100%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
+  background: linear-gradient(0deg, white 0%, white 100%);
+  border-radius: 30px;
 }
 
-.hello-i-m-ilias {
-  color: #000000;
-  text-align: center;
-  font-family: 'Rubik', sans-serif; /* Werk het lettertype bij naar Rubik */
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  font-weight: 600;
+.hello-im-ilias {
   position: absolute;
+  width: 100%;
+  text-align: center;
   top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.32px;
+}
+
+.student-software-developer {
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  top: 525px;
+  color: black;
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.26px;
+}
+
+.image1 {
+  width: 288px;
+  height: 297px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image1 img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+}
+
+.who-is-this {
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-family: 'Sometype Mono', monospace;
+  font-weight: 700;
+  margin-top: 31px; /* Verklein de afstand naar 31px */
+}
+
+/* About Section CSS */
+.frame {
+  width: 100%;
+  max-width: 1280px;
+  height: 487px;
+  padding: 0 20px; /* Verklein de bovenste padding om de tekst dichter bij de titel te brengen */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: center; /* Centreer de inhoud verticaal */
+  align-items: center; /* Centreer de inhoud horizontaal */
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.about-text {
+  width: 682px;
+  height: 244px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Sometype Mono Medium', monospace;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.about-text p {
+  margin: 0;
+  text-align: center; /* Zorg ervoor dat de tekst gecentreerd is */
+}
+
+.about-text span {
+  display: inline-block;
+}
+
+.about-text span.highlight {
+  color: #85A3F0;
+  text-decoration: underline;
+}
+
+.read-more {
+  text-align: center;
+  color: #81A4FF;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 20px; /* Voeg wat ruimte toe boven de read-more link */
+}
+
+.read-more a {
+  color: #81A4FF;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero {
+      height: auto;
+  }
+
+  .group-60 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .group-52, .group-53 {
+      margin-bottom: 10px;
+  }
+
+  .student-software-developer, .hello-im-ilias, .who-is-this {
+      font-size: 12px;
+  }
+
+  .image1 {
+      width: 200px;
+      height: 200px;
+  }
+
+  .image1 img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .frame {
+      padding: 50px 20px;
+  }
+
+  .about-text {
+      width: 100%;
+      height: auto;
+      font-size: 18px;
+  }
 }

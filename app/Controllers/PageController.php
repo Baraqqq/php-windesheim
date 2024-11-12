@@ -1,49 +1,77 @@
-<?php 
-
+<?php
 namespace App\Controllers;
 
 use Symfony\Component\Routing\RouteCollection;
 
 class PageController
 {
-    // Homepage action
     public function homeAction(RouteCollection $routes)
     {
         require_once APP_ROOT . '/views/home.php';
     }
 
-    // Contact page action
     public function contactAction(RouteCollection $routes)
     {
         require_once APP_ROOT . '/views/contact.php';
     }
 
-    // Second homepage action
-    public function secondHomeAction()
+    public function aboutAction()
     {
-        require_once APP_ROOT . '/views/second_home.php';
+        require_once APP_ROOT . '/views/about.php';
     }
 
-    // About Me page action
-    public function aboutMeAction()
-    {
-        require_once APP_ROOT . '/views/about-me.php';
-    }
-
-    // Blogs page action
     public function blogsAction()
     {
         require_once APP_ROOT . '/views/blogs.php';
     }
 
-    // Works page action
+    public function skillsAction()
+    {
+        require_once APP_ROOT . '/views/skills.php';
+    }
+
+    public function projectsAction()
+    {
+        require_once APP_ROOT . '/views/projects.php';
+    }
+
+    public function projectAction()
+    {
+        require_once APP_ROOT . '/views/project.php';
+    }
+
     public function worksAction()
     {
         require_once APP_ROOT . '/views/works.php';
     }
+
     public function loginAction()
     {
-        require_once APP_ROOT . '/views/login.php';
+        require_once APP_ROOT . '/views/admin/login.php';
+    }
+
+    public function adminDashboardAction()
+    {
+        require_once APP_ROOT . '/views/admin/index.php';
+    }
+
+    public function manageAboutAction()
+    {
+        require_once APP_ROOT . '/views/admin/manage_about.php';
+    }
+
+    public function manageProjectsAction()
+    {
+        require_once APP_ROOT . '/views/admin/manage_projects.php';
+    }
+
+    public function manageSkillsAction()
+    {
+        require_once APP_ROOT . '/views/admin/manage_skills.php';
+    }
+
+    public function logoutAction()
+    {
+        require_once APP_ROOT . '/views/admin/logout.php';
     }
 }
-?>

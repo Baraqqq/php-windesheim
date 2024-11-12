@@ -1,0 +1,146 @@
+.header,
+.header * {
+  box-sizing: border-box;
+}
+.header {
+  height: 700px;
+  position: relative;
+}
+.frame-3710 {
+  width: 1280px;
+  height: 698px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-74 {
+  background: #eaeaea;
+  width: 1284px;
+  height: 698px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.group-60 {
+  position: absolute;
+  inset: 0;
+}
+.group-54 {
+  width: 152px;
+  height: 36px;
+  position: static;
+}
+.group-52 {
+  width: 152px;
+  height: 36px;
+  position: static;
+}
+.rectangle-84 {
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #85a3f0;
+  border-width: 3px;
+  width: 152px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - -3px);
+  top: 569px;
+}
+.download-cv {
+  color: #85a3f0;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - -30px);
+  top: 578px;
+  width: 99px;
+  height: 18px;
+}
+.group-53 {
+  width: 152px;
+  height: 36px;
+  position: static;
+}
+.rectangle-83 {
+  background: linear-gradient(to left, #85a3f0, #85a3f0);
+  border-radius: 30px;
+  width: 152px;
+  height: 36px;
+  position: absolute;
+  left: calc(50% - 154px);
+  top: 569px;
+}
+.lets-connect {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: absolute;
+  left: calc(50% - 126px);
+  top: 578px;
+}
+.group-61 {
+  width: 213px;
+  height: 39px;
+  position: absolute;
+  left: calc(50% - 106px);
+  top: 473px;
+}
+.rectangle-51 {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.hello-i-m-ilias {
+  color: #000000;
+  text-align: left;
+  font-family: "Rubik-SemiBold", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  position: absolute;
+  right: 22.54%;
+  left: 23%;
+  width: 54.46%;
+  bottom: 25.64%;
+  top: 25.64%;
+  height: 48.72%;
+}
+.student-software-developer {
+  color: #000000;
+  text-align: left;
+  font-family: "Rubik-Light", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  position: absolute;
+  left: calc(50% - 90px);
+  top: 525px;
+}
+.image-1 {
+  width: 288px;
+  height: 297px;
+  position: absolute;
+  left: 496px;
+  top: 142px;
+}
+.image-12 {
+  border-radius: 181.5px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}

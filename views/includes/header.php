@@ -3,111 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/css/styles.css">
-      <!-- <style>
-.header {
-    padding: 20px;
-    text-align: center;
-    background-color: transparent;
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mail {
-    background-color: #E2E2E2;
-    border-radius: 20px; /* Pas de border-radius aan */
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    height: 40px; /* Pas de hoogte aan */
-}
-
-.rectangle-48 {
-    background: linear-gradient(to left, #e2e2e2, #e2e2e2);
-    border-radius: 20px; /* Pas de border-radius aan */
-    height: 30px;
-    position: relative;
-}
-
-.iliasbach-hotmail-com {
-    font-size: 16px;
-    color: #333;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.copy-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 20px; /* Pas de border-radius aan */
-    cursor: pointer;
-    height: 40px; /* Pas de hoogte aan */
-}
-
-.copy-button:hover {
-    background-color: #555;
-}
-
-.login-frame {
-    width: 100px; /* Pas de breedte aan */
-    height: 40px; /* Pas de hoogte aan */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to left, #ffffff, #ffffff);
-    border-radius: 20px; /* Pas de border-radius aan */
-    cursor: pointer;
-}
-
-.login2 {
-    color: #000000;
-    font-family: "Rubik-Regular", sans-serif;
-    font-size: 16px; /* Pas de font-size aan */
-    letter-spacing: 0.02em;
-    font-weight: 400;
-}
-    </style> -->
 </head>
 <body>
-    <div class="header">
-        <div class="mail">
-            <div class="rectangle-48"></div>
-            <div class="iliasbach-hotmail-com" id="email">iliasbach@hotmail.com</div>
-            <button class="copy-button" onclick="copyEmail()">Copy</button>
+<header>
+    <div class="frame-3712">
+        <div class="component1">
+            <div class="mail">
+                <div class="rectangle-48"></div>
+                <div class="iliasbach-hotmail-com">iliasbach@hotmail.com</div>
+                <div class="copy">
+                    <div class="rectangle-50"></div>
+                    <div class="copy2" onclick="copyEmail()">Copy</div>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about-me">About Me</a></li>
-                <li><a href="/blogs">Blogs</a></li>
-                <li><a href="/works">Works</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="/login" class="login-frame">
-            <div class="login2">Login</div>
-        </a>
+        <div class="navbar">
+            <div class="home"><a href="/"><span class="home-span">#</span><span class="home-span2">home</span></a></div>
+            <div class="projects"><a href="/projects"><span class="projects-span">#</span><span class="projects-span2">projects</span></a></div>
+            <div class="about"><a href="/about"><span class="about-span">#</span><span class="about-span2">about</span></a></div>
+            <div class="blogs"><a href="/blogs"><span class="blogs-span">#</span><span class="blogs-span2">blogs</span></a></div>
+            <div class="skills"><a href="/skills"><span class="skills-span">#</span><span class="skills-span2">skills</span></a></div>
+        </div>
+        <div class="login-container">
+            <div class="login"><a href="/admin/login">Login</a></div>
+        </div>
     </div>
-
-    <script>
-        function copyEmail() {
-            const emailText = document.getElementById('email').innerText;
-            const textarea = document.createElement('textarea');
-            textarea.value = emailText;
-            document.body.appendChild(textarea);
-            textarea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textarea);
-        }
-    </script>
+</header>
+<script>
+function copyEmail() {
+    const email = "iliasbach@hotmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Email copied to clipboard");
+    }).catch(err => {
+        console.error("Failed to copy email: ", err);
+    });
+}
+</script>
 </body>
 </html>
